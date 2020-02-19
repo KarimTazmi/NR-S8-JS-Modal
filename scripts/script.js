@@ -1,16 +1,20 @@
-var modal = document.querySelector("#myModal");
+function modal() {
+  const modalGalleryImg = document.querySelector(".modal__gallery-img");
+  const modalContainer = document.querySelector(".modal");
+  const modalImage = document.querySelector(".modal__image");
+  const modalCaption = document.querySelector(".modal__caption");
 
-var img = document.querySelector("#gallery__image");
-var modalImg = document.querySelector("#gallery__images");
-var captionText = document.querySelector("#modal__caption");
-img.onclick = function() {
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-};
+  modalGalleryImg.onclick = function() {
+    modalContainer.style.display = "block";
+    modalImage.src = this.src;
+    modalCaption.innerHTML = this.alt;
+  };
 
-var span = document.getElementsByClassName("close")[0];
+  const modalClose = document.querySelector(".modal__close")[0];
 
-span.onclick = function() {
-  modal.style.display = "none";
-};
+  modalClose.onclick = function() {
+    modalContainer.style.display = "none";
+  };
+}
+
+modal();

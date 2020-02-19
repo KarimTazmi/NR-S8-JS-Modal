@@ -8,12 +8,26 @@
   </head>
 
   <body>
-    <img src="img/grumpy-small.png" id="gallery__image" alt="Snow" />
+    <!--
+      Originele afbeelding met tag om de source aan te spreken
 
-    <div id="myModal" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="gallery__images" />
-      <div id="modal__caption"></div>
+      Modal nodig bestaande uit DIV met een class
+      > Span voor close icon
+      > img class zonder src 
+      > div voor caption
+
+    -->
+
+    <img
+      src="img/grumpy-big.jpg"
+      alt="A very scary grumpy cat!"
+      class="modal__gallery-img"
+    />
+
+    <div class="modal">
+      <span class="modal__close">&times;</span>
+      <img class="modal__image" />
+      <div class="modal__caption"></div>
     </div>
 
     <script src="scripts/script.js"></script>
