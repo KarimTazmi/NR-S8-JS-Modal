@@ -4,13 +4,13 @@ function modal() {
   const modalImage = document.querySelector(".modal__image");
   const modalCaption = document.querySelector(".modal__caption");
 
-  modalGalleryImg.onclick = function() {
+  modalGalleryImg.onclick = function modalOpen() {
     modalContainer.style.display = "block";
     modalImage.src = this.src;
     modalCaption.innerHTML = this.alt;
   };
 
-  const modalClose = document.querySelector(".modal__close")[0];
+  const modalClose = document.querySelector(".modal__close");
 
   modalClose.onclick = function() {
     modalContainer.style.display = "none";

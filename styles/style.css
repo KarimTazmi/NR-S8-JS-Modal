@@ -1,3 +1,7 @@
+:root {
+  color: #ffffff;
+}
+
 .modal__gallery-img {
   cursor: pointer;
 }
@@ -9,8 +13,11 @@
   overflow: auto;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 100px;
 }
 
 .modal__image {
@@ -22,13 +29,18 @@
 
 .modal__caption {
   display: block;
+  margin: auto;
   width: 80%;
   max-width: 1000px;
   height: 100px;
+  text-align: center;
+  padding: 10px 0;
 }
 
 .modal__close {
+  cursor: pointer;
   position: absolute;
   top: 20px;
   right: 50px;
+  font-size: 40px;
 }
