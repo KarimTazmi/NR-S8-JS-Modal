@@ -1,4 +1,4 @@
-:root {
+/* :root {
   color: #ffffff;
 }
 
@@ -6,7 +6,6 @@
   cursor: pointer;
 }
 
-/* Modal container */
 .modal {
   display: none;
   position: fixed;
@@ -43,4 +42,10 @@
   top: 20px;
   right: 50px;
   font-size: 40px;
+} */
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 1rem;
 }
